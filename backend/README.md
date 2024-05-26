@@ -20,8 +20,10 @@ docker run -it --name redis_test -p 6379:6379 -d redis:alpine3.19 --requirepass 
 ```Shell
 cd {현재 프로젝트 경로}/backend
 vi ./env/backend/.env
-# DB_DOMAIN 경로 Backend에서 실행한 MySQL Docker 경로로 설정(docker inspect로 확인)
-# SESSION_REDIS_HOST 경로 Backend에서 실행한 Redis Docker 경로로 설정(docker inspect로 확인)
+# DB_DOMAIN 경로 위에서 실행한 MySQL Docker 경로로 설정(docker inspect로 확인)
+docker inspect mysql_test
+# SESSION_REDIS_HOST 경로 위에서 실행한 Redis Docker 경로로 설정(docker inspect로 확인)
+docker inspect redis_test
 ```
 
 ### 2. Gradle 빌드하기
