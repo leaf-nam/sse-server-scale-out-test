@@ -4,7 +4,7 @@
 ### 1. 환경변수 설정하기
 ```Shell
 cd {현재 프로젝트 경로}/sse-server
-vi ./env/backend/.env
+vi .env
 # DB_DOMAIN 경로 Backend에서 실행한 MySQL Docker 경로로 설정(docker inspect로 확인)
 docker inspect mysql_test
 # SESSION_REDIS_HOST 경로 Backend에서 실행한 Redis Docker 경로로 설정(docker inspect로 확인)
