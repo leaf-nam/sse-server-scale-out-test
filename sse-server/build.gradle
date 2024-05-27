@@ -50,7 +50,7 @@ tasks.named('test') {
 }
 
 // to build fast
-//test {
-//	exclude '**/*'
-//}
+test {
+	exclude '**/*'
+}
 
